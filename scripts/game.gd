@@ -650,7 +650,7 @@ func _journal_update() -> void:
 # v0.22 — stage 1: island exploration with location unlocks and travel cost.
 func _explore_island() -> void:
 	var destinations := ["ПЛЯЖ", "ЛЕС", "ЛАГУНА", "СКАЛЬНЫЙ ПЕРЕВАЛ", "СТАРЫЙ ПИРС"]
-	var next_location := destinations[randi_range(0, destinations.size() - 1)]
+	var next_location: String = destinations[randi_range(0, destinations.size() - 1)]
 	if energy < 12.0:
 		_set_message("Сил не хватает для выхода на остров.")
 		return
