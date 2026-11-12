@@ -142,7 +142,7 @@ func _validate_room_connectivity() -> void:
 					visited[next_room] = true
 					queue.append(next_room)
 		if visited.size() != rooms.size():
-				push_error("Изолированное помещение на этаже %d: доступно %d из %d" % [floor_index + 1, visited.size(), rooms.size()])
+			push_error("Изолированное помещение на этаже %d: доступно %d из %d" % [floor_index + 1, visited.size(), rooms.size()])
 		else:
 			print("Этаж %d: все %d помещений соединены коридорами." % [floor_index + 1, rooms.size()])
 
