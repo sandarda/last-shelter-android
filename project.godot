@@ -1,0 +1,32 @@
+; Engine configuration file.
+; Last Shelter - first playable greybox prototype
+config_version=5
+
+[application]
+config/name="Последнее убежище"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+config/version="0.23.0"
+config/description="Survival adventure inside a hidden cliff shelter"
+config/icon="res://art/app_icon.png"
+
+[display]
+window/handheld/orientation=4
+window/stretch/mode="canvas_items"
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/aspect="expand"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.10, 0.08, 0.06, 1)
+
+[input]
+ui_left={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":65),Object(InputEventKey,"physical_keycode":4194311)]}
+ui_right={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":68),Object(InputEventKey,"physical_keycode":4194313)]}
+ui_up={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":87),Object(InputEventKey,"physical_keycode":4194320)]}
+ui_down={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":83),Object(InputEventKey,"physical_keycode":4194322)]}
